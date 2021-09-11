@@ -6,11 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link
+        href="//fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Google+Sans:400,500|Product+Sans:400&lang=en"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <title>Google Drive Clone</title>
 </head>
 
@@ -18,20 +21,25 @@
     <!-- navbar -->
     <nav class="navigation px-4">
 
-        <a class="logo">
-            <img src="https://kstatic.googleusercontent.com/files/f4b4fbcc6119576da7ab3f68270196009fc1b16f1927910842d793c385115593b6dd5fbe9a1e21fe64f3cbbc509c3a02c95ebc9635f76c355282482986f1fe7d"
-                width="15%" alt="">
-            <div class="logo-title mt-3"> Google <span>Drive</span></div>
-        </a>
+        <div class="nav-left">
+            <a class="logo">
+                <img src="https://kstatic.googleusercontent.com/files/f4b4fbcc6119576da7ab3f68270196009fc1b16f1927910842d793c385115593b6dd5fbe9a1e21fe64f3cbbc509c3a02c95ebc9635f76c355282482986f1fe7d"
+                    width="15%" alt="">
+                <div class="logo-title mt-4" id="title-google"> Google <span>Drive</span></div>
+            </a>
 
-        <ul class="nav-content pt-1">
-            <li class="p-3 pl-0">Individuals</li>
-            <li class="p-3">Teams</li>
-            <li class="p-3">Enterprise</li>
-        </ul>
-        <div class="nav-btn mt-3">
-            <span id="btn-1">Go to Drive</span>
-            <span id="btn-2">Try Drive for your team</span>
+            <ul class="nav-content pt-1 ">
+                <li class="p-3 pl-0">Individuals</li>
+                <li class="p-3">Teams</li>
+                <li class="p-3">Enterprise</li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <div class="nav-btn mt-3">
+                <span id="btn-1">Go to Drive</span>
+                <span id="btn-2">Try Drive for your team</span>
+            </div>
         </div>
     </nav>
 
@@ -71,7 +79,8 @@
                 <img src="https://kstatic.googleusercontent.com/files/8317f83271acdf124799a6f1888da1313d29696309f46e1876ad3216e5ae3d5cb9049b45b58cc1f201f1293badbf9046a664652e019b5574a7e8979964bff928"
                     alt="">
                 <h1>Cloud-native collaboration apps to supercharge teamwork</h1>
-                <p class="pt-3 pb-4 text">Drive integrates seamlessly with <a href="">Docs </a>,<a href="">Sheets</a> ,and<a href="">  Slides</a>, cloud-native apps
+                <p class="pt-3 pb-4 text">Drive integrates seamlessly with <a href="">Docs </a>,<a href="">Sheets</a>
+                    ,and<a href=""> Slides</a>, cloud-native apps
                     that enable your team to collaborate effectively in real time. Create and share content with your
                     team on Day 1, with no need to migrate from existing tools.</p>
             </div>
@@ -89,7 +98,9 @@
                     alt="" width="15%">
                 <h1>Integration with the tools and apps your team is already using
                 </h1>
-                <p class="text">Drive integrates with and complements your team’s existing technology. Collaborate in Microsoft Office files without the need to convert file formats, and edit and store over 100 additional file types, including PDFs, CAD files, images, and more.</p>
+                <p class="text">Drive integrates with and complements your team’s existing technology. Collaborate in
+                    Microsoft Office files without the need to convert file formats, and edit and store over 100
+                    additional file types, including PDFs, CAD files, images, and more.</p>
             </div>
         </section>
 
@@ -99,13 +110,375 @@
                 <img src="https://kstatic.googleusercontent.com/files/1215f100aed56568e58a202bef5caf51ebcc316ed033a7d042d6d6c1f90f56c39e5633d0fcb521d98e3d40022e901c535be27f73510c7d95e0bf39c861bd46ff"
                     alt="">
                 <h1>Google’s AI and Search technology helps your team move faster</h1>
-                <p class="pt-3 pb-4 text">Google’s powerful search capabilities are embedded in Drive and offer unmatched speed, performance, and reliability. And features like Priority use AI to predict what you’re looking for and surface the most relevant content—helping your team find files up to 50% faster.</p>
+                <p class="pt-3 pb-4 text">Google’s powerful search capabilities are embedded in Drive and offer
+                    unmatched speed, performance, and reliability. And features like Priority use AI to predict what
+                    you’re looking for and surface the most relevant content—helping your team find files up to 50%
+                    faster.</p>
             </div>
             <img class="sec-left-img"
                 src="https://lh3.googleusercontent.com/TIze8VGPsxhAWglK1i4ROYTGK426IFRtLQ43uzkMRYUlEZsHQKhYfXQWjVOKUFGKN1l2Cboam1lM4uo4e6kpyTsaunMM00hB5y0Pn7A=s0"
                 alt="">
         </section>
+        <hr class="mt-5">
+
+
+        <!-- devices section start-->
+        <section class="device new text-center">
+            <h1 class="sec-h1">Experience Drive on any device</h1>
+            <p class="text mt-3">Drive works on all major platforms, enabling you to work seamlessly across your
+                browser, mobile device, tablet, and computer.</p>
+
+            <a href="">
+                <img class="m-3" width="20%"
+                    src="https://kstatic.googleusercontent.com/files/540ac1df440f3a3708b6f31b7fa0c4fd7fd4471dc0614cab5482e110dee791fd6492b009e67d1bbc3467bd6ac63785f5120cb8070ab95de32830c63975290455"
+                    alt="">
+            </a>
+            <a href="">
+                <img class="m-3" width="20%"
+                    src="https://kstatic.googleusercontent.com/files/6e1905e140550741a844d866fa3fd7c11f4a9d6cb84081b66fe973ee7c0afd03e548ccf9cdf7d671c9d3f301e593b53bc2050a06d900daf13acb0b267d88e691"
+                    alt="">
+            </a>
+            <div class="mt-3 device-links">
+                <a href="" class="left-link">Go to Google Drive</a>
+                <a href="" class="left-link"> Download Drive for desktop</a>
+            </div>
+        </section>
+        <!-- devices section end-->
+
+        <section class="partener text-center new bg-light">
+            <h1 class="sec-h1 p-5">Thousands of teams are already using Drive to revolutionize the way they work</h1>
+            <div class="partener-carousel-sec bg-white">
+
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="carousel-image">
+                                <img src="./images/logo_Salesforce (1).svg" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                                <h3 class="mt-5 p-2">"I never worry about finding a document .Everything in Drive, I can
+                                    access it anywhere, and that's been revolutionary. "</h3>
+                                <p class="mt-5"><a href="">Read Story</a></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-image">
+                                <img src="./images/logo-cardinal-group_01_1x.jpg" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                                <h3 class="mt-5 p-2">"Most of our team memers are already familier with drive and found
+                                    it
+                                    very intuitive and easy to use, so change management was minimal and we were quickly
+                                    up and"</h3>
+                                <p class="mt-5"><a href="">Read Story</a></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-image">
+                                <img src="./images/logo_Ibotta_1x.jpg" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                                <h3 class="mt-5 p-2">"Real time collaboration with Google Docs and Drive and is a
+                                    must-have...if we everr tried to move employees off it, it would be a torches and
+                                    pitchforks situation - complete chaos."</h3>
+                                <p class="mt-5"><a href="">Read Story</a></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-image">
+                                <img src="./images/logo_ATB Finance_1x (1).jpg" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                                <h3 class="mt-5 p-2">"Google is revolutionizing collaboration and individual
+                                    Productivity
+                                    through AI. Employees can focus more on creating value for our customers and less on
+                                    mundane tasks."</h3>
+                                <p class="mt-5"><a href="">Read Story</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+            <div class="m-5 pt-5 pb-5">
+                <img class="m-4" src="./images/logo_Broadcom_01.svg" alt="">
+                <img class="m-4" src="./images/logo_freedom.svg" alt="">
+                <img class="m-4" src="./images/logo_Sanmina.svg" alt="">
+                <img class="m-4" src="./images/logo_ScottMiracle.svg" alt="">
+                <img class="m-4" src="./images/logo_Whirlpool.svg" alt="">
+            </div>
+        </section>
+
+        <!-- progress bar start -->
+        <section>
+            <div class="progress-sec p-5">
+                <div class="progress-content-sec">
+                    <h1 class="sec-h1">Users prefer Drive to competing products</h1>
+                    <p id="source"><a href="">SOURCE: </a> G2.COM, INC., FEBRUARY 2020</p>
+                </div>
+                <div class="progress-bar-sec p-4">
+                    <div class="progress-bar-sec-row m-3">
+                        <div class="p-3">
+                            <a href="">
+                                <img src="https://kstatic.googleusercontent.com/files/5017f55c765740037897cfbd075cf8ddaf1f132af8a2546e9de6330c86e0ea31597d182f2ee763584cb45db92cea96aa4995944546c595dd5ddcb043a279ec91"
+                                    alt="" width="100%">
+                            </a>
+                        </div>
+                        <div class="mt-2 ">4.7
+                            <div class="progress " style="height:6px;">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 94%"
+                                    aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="progress-bar-sec-row m-3">
+                        <div class="p-3">
+                            <a href="">
+                                <img src="https://kstatic.googleusercontent.com/files/ae0cd5d1a3755f3941ee7caf636a7e7f86c1e259631a828b0b19a6a8afc5e66b011b084cb6b6a776d229001cf9dfb0d246f7701d9236cc9591825702878344ed"
+                                    alt="" width="100%">
+                            </a>
+                        </div>
+                        <div class="mt-2 ">4.3
+                            <div class="progress " style="height:6px;">
+                                <div class="progress-bar bg-secondary" role="progressbar" style="width: 86%"
+                                    aria-valuenow="86" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="progress-bar-sec-row m-3">
+                        <div class="p-3">
+                            <a href="">
+                                <img style="float: right;"
+                                    src="https://kstatic.googleusercontent.com/files/66cc7c5e9c2e3c271f4bf5dda4253b3d59aa57ac9a7e1521f03c4800bb924508c07a5b1fe9b47e3456cd13698934dd3f5e40e1347200869a87ca03b97129b932"
+                                    alt="" width="40%">
+                            </a>
+                        </div>
+
+                        <div class=" mt-2">4.2
+                            <div class="progress" style="height:6px;">
+                                <div class="progress-bar bg-secondary" role="progressbar" style="width: 84%"
+                                    aria-valuenow="84" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="progress-bar-sec-row m-3">
+                        <div class="p-3">
+                            <a href="">
+                                <img src="https://kstatic.googleusercontent.com/files/b729ad3dc1406d936d264aa1a71a56da6fc2d98c14c37ec2237682bd67f621503cf0f5cc75718387e709add303bf343f872eda83b0d4cfd28df7fbc4e1fd27de"
+                                    alt="" width="100%"></a>
+                        </div>
+                        <div class="mt-2">4.2
+                            <div class="progress" style="height:6px;">
+                                <div class="progress-bar bg-secondary" role="progressbar" style="width: 84%"
+                                    aria-valuenow="84" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+        </section>
+
+        <!-- progress bar end -->
+
+        <hr class="mt-5">
+
+        <!-- tools-section start -->
+
+        <section class="tools-sec new">
+            <h1 class="sec-h1 text-center">Drive integrates with the tools your team is already using</h1>
+            <div class="tools">
+                <ul class="tools-list m-5">
+                    <li>
+                        <a href="">
+                            <img src="https://kstatic.googleusercontent.com/files/667fa0a2a1aa16fb1a877a3b3f2725cc03b156c36f458422c4279744e3cdd67fa75470b541ba1018ca6628e1126131a49c24e918f919a4e4ee10923f1d48ca8c"
+                                alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://kstatic.googleusercontent.com/files/686902a5a73584f00448ecb41b20642e6a67bb8a30856e62f31cec5a5658f0c230d7e4d985e6bb735be91b7bc43026e1dfc5a17abf22f20aebbfe39527b620c7"
+                                alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://kstatic.googleusercontent.com/files/502e1e2bcf1d734194ada6a0404463ea623c3c5eb170ce7ca5a8b95febfce2be839280662ef8b350a6605e79e86a6254e1d9160a3ba1de29d2bd0b0506f46194"
+                                alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://kstatic.googleusercontent.com/files/7ab7238bb2adf87b4b0a5a4b51d04a8c00269e10761a786f6d025ad7f5f79c56d83a71251e9b8c650de502ad431cc3c2a5d60561595e6f41a3a6ff5d57247649"
+                                alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://kstatic.googleusercontent.com/files/29a8b6c367123fbc5365cd156b12d35427fa7640e6af546d59af38dff162fe82ee529cdcb82ea31f5a4bb8687a492966528c0222706e5017d0d0ec4b7324bd31"
+                                alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://kstatic.googleusercontent.com/files/7f3a6ff42f9b19117c333a2cecdb09c083cdc5ef945fd616124dd56b7d740baee34b7a518ba2f7013f0f560dbed6c49cad94d6f758444822f755506cc3683e3b"
+                                alt="">
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </section>
+        <!-- tools-section start -->
+
+        <!-- cards start-->
+        <section class="cards-sec new">
+            <h1 class="sec-h1 text-center">Let’s get started</h1>
+            <div class="cards mt-5">
+
+                <div class="cards-list ">
+                    <div>
+                        <img src="https://kstatic.googleusercontent.com/files/b12e6f3834aab6acea75b7cff5d1a1406d6413ba284b2bd69f3dd8a2d3c3f5ad393bcc8b0549f579d2c6294f5a367e7ca5acea7e6d821830de41df82b9f2a682"
+                            alt="">
+                    </div>
+                    <h5 class="mt-3">Individuals</h5>
+                    <p class="text mb-5">Store, share, and access your files and folders from any mobile device, tablet,
+                        or computer—and your first 15GB of storage are free.</p>
+                    <a href="" class="mt-5">Go to Google Drive</a>
+                </div>
+
+                <div class="cards-list">
+                    <div>
+                        <img src="https://kstatic.googleusercontent.com/files/64ff889abf61c815891d25f9ac651f5f94bc7bd561eb76dd56c98bb9c9bfd5cb0594299a8455cfd644dae73d2d284acd5d54bcd1a489a6106e3e1838bff36818"
+                            alt="">
+                    </div>
+                    <h5 class="mt-3">Teams</h5>
+                    <p class="text mb-5">Help your team move faster with a secure cloud-based collaboration platform
+                        that makes it easy for you to share, store, and access files.</p>
+                    <a href="" class="mt-5">Try Drive for your team</a>
+                </div>
+
+                <div class="cards-list">
+                    <div>
+                        <img src="https://kstatic.googleusercontent.com/files/889ba0564c17f5c853c5ad8b0a404c5335075d83ef847850f91e968bf1ac4c31d040277a1c1c60b6766ec02d92eab724cb616b6721fb8683f3ec6a5176083fc5"
+                            alt="">
+                    </div>
+                    <h5 class="mt-3">Enterprise</h5>
+                    <p class="text mb-5">Protect and safeguard your company’s data with Data Loss Prevention, Vault for
+                        eDiscovery and archiving, and security center.</p>
+                    <a href="" class="mt-5">Learn more</a>
+                </div>
+            </div>
+
+        </section>
+        <!-- cards end-->
+
+        <!-- Resources start -->
+        <section class="new">
+            <div>
+                <h1 class="sec-h1 text-center">Resources</h1>
+            </div>
+            <div class="resources-card-carousel">
+
+            </div>
+        </section>
+        <!-- Resources end -->
     </div>
+
+    <!-- footer start -->
+    <footer class="new bg-light">
+        <div class="footer-sec">
+            <div class="footer-list-sec">
+                <ul class="footer-list p-0">
+                    <li class="footer-head pb-4">Upgrade Drive</li>
+                    <li><a href="">Individuals - Google One</a> </li>
+                    <li><a href="">Teams - Try Drive free</a></li>
+                    <li><a href="">Google Workspace Essentials</a></li>
+                </ul>
+                <ul class="footer-list p-0">
+                    <li class="footer-head pb-4">Downloads</li>
+                    <li><a href="">Drive for Mac/PC</a></li>
+                    <li><a href="">Drive for Android</a></li>
+                    <li><a href="">Drive for iOS</a></li>
+                </ul>
+                <ul class="footer-list p-0">
+                    <li class="footer-hea pb-4">Resources</li>
+                    <li><a href="">Google Drive Blog</a></li>
+                </ul>
+                <ul class="footer-list p-0">
+                    <li class="footer-head pb-4">Support</li>
+                    <li><a href="">Help Center</a></li>
+                    <li><a href="">Google Drive Help Forum</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+                <ul class="footer-list p-0">
+                    <li class="footer-head pb-4">More Solutions</li>
+                    <li><a href="">Google Cloud</a></li>
+                    <li><a href="">Google Workspace</a></li>
+                </ul>
+
+            </div>
+            <hr class="mt-5 p-3">
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <ul class="p-0">
+                        <li id="footer-google" ><a href="">Google</a></li>
+                    </ul>
+                </div>
+                <div class="footer-content mt-2">
+                    <ul>
+                        <li class=""><a href="">Privacy</a></li>
+                        <li class=""><a href="">Terms</a></li>
+                        <li class=""><a href="">About</a></li>
+                        <li class=""><a href="">Google Products</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-bottom-right mt-2">
+                    <ul>
+                        <li><a href=""><i class="fas fa-question-circle"></i>Help</a></li>
+                        <li>
+                            <select name="language" id="language" class="bg-light">
+                                <option value="" selected>English(India)</option>
+                                <option value="">Dutch</option>
+                                <option value="">French</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
