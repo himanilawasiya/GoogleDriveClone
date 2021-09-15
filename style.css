@@ -168,7 +168,21 @@ padding-right: 12% ;
     
 
 /* device */
+.device{
+    margin-top: 0;
+    position: relative;
+}
 
+.device::before{
+    content: " ";
+    position: absolute;
+    background: url(./images/background.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
 
  .device p{
      margin: 0 15%;
@@ -197,20 +211,16 @@ margin-left: 30px;
 
 .partener-carousel-sec{
     width: 84%;
-    height: 60vh;
     margin: auto;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .carousel-image{
-    padding-top: 50px;
+    padding-top: 30px;
 }
-.carousel-inner{
-    margin-bottom:50px;
- }
 
  .carousel-indicators{
-       top:420px;
+       top:370px;
 }
 
 .carousel .carousel-indicators li{
@@ -218,9 +228,12 @@ margin-left: 30px;
     height: 10px;
     border-radius: 100%;
     border: 1px solid black;
-    background: black; 
+    background: none; 
 }
 
+.carousel-indicators li.active{
+    background: black;
+}
 .carousel-link a:hover{
     border-radius: 4px;
         color: #1a73e8;;
@@ -238,10 +251,24 @@ margin-left: 30px;
 .progress-bar-sec-row{
     display: grid;
     grid-template-columns:2fr 4fr;
-
 }
 
+.result{
+margin-bottom: 0;
+text-align: right;
+}
 
+#seven{
+    margin-right:25px;
+}
+
+#three{
+    margin-right: 58px;
+}
+
+#two{
+    margin-right: 65px;
+}
 .progress-content-sec h1{
     padding: 50px 40px 0 40px;
 }
@@ -381,6 +408,13 @@ grid-template-columns: 1fr 7fr 2fr;
     background: rgb(219, 217, 217);
 }
 
+#help{
+    display: flex;
+}
+
+#help i{
+    margin: 5px;
+}
 #language{
 width: 300px;
 color: #80868b;
